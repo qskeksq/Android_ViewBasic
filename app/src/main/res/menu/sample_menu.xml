@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 일반 메뉴 -->
+    <item
+        android:id="@+id/item1"
+        android:menuCategory="container"
+        android:title="item1"
+        android:titleCondensed="one"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/item2"
+        android:menuCategory="container"
+        android:title="item2"
+        android:titleCondensed="two"
+        app:showAsAction="ifRoom" />
+
+    <!-- 서브 메뉴 -->
+    <item
+        android:id="@+id/item3"
+        android:menuCategory="container"
+        android:title="item3"
+        android:titleCondensed="three"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/item4"
+                android:menuCategory="container"
+                android:title="item4"
+                android:titleCondensed="four"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/item5"
+                android:menuCategory="container"
+                android:title="item5"
+                android:titleCondensed="five"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/item6"
+                android:menuCategory="container"
+                android:title="item6"
+                android:titleCondensed="six"
+                app:showAsAction="ifRoom" />
+        </menu>
+    </item>
+
+    <!-- 그룹 메뉴 -->
+    <item
+        android:id="@+id/group_item"
+        android:title="group"
+        android:titleCondensed="group"
+        app:showAsAction="always">
+        <group
+            android:id="@+id/group1"
+            android:checkableBehavior="all"
+            android:enabled="true"
+            android:menuCategory="alternative"
+            android:visible="true">
+            <item
+                android:id="@+id/item7"
+                android:checkable="true"
+                android:checked="true"
+                android:menuCategory="container"
+                android:title="item7"
+                android:titleCondensed="seven"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/item8"
+                android:checkable="true"
+                android:menuCategory="container"
+                android:title="item8"
+                android:titleCondensed="eight"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/item9"
+                android:checkable="true"
+                android:menuCategory="container"
+                android:title="item7"
+                android:titleCondensed="nine"
+                app:showAsAction="ifRoom" />
+        </group>
+    </item>
+
+    <!-- actionClass -->
+    <item
+        android:id="@+id/item10"
+        android:title="actionClass"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <!-- actionView -->
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@android:drawable/ic_search_category_default"
+        android:orderInCategory="102"
+        android:title="Search"
+        app:actionLayout="@layout/action_layout"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+
+</menu>

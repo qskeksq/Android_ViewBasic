@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.psalms40.widgetadvanced.MainActivity">
+
+
+    <Button
+        android:id="@+id/goLayoutTransition"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="LayoutTransition"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/goTabHost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TabHost"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goLayoutTransition" />
+
+    <Button
+        android:id="@+id/goLayerList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="LayerList"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goTabHost" />
+
+    <Button
+        android:id="@+id/goListStickyTabHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ListStickyTabHeader"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goLayerList" />
+
+    <Button
+        android:id="@+id/goViewPagerGallery"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ViewPagerGallery"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goListStickyTabHeader" />
+
+    <Button
+        android:id="@+id/goCustomDrawables"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="CustomDrawables"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goViewPagerGallery" />
+
+    <Button
+        android:id="@+id/goMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goCustomDrawables" />
+</android.support.constraint.ConstraintLayout>
